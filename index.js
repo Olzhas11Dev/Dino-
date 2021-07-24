@@ -15,7 +15,8 @@ function newPic(){
     let image = document.createElement('img');
     let randomNum = Math.floor(Math.random()*4)+1;
     image.src=`./img/image${randomNum}.png`;   // to import random SOURCE image
-    image.style.width = "90px";
+    // image.style.width = "90px";
+    image.classList.add("my_class")
     content.appendChild(image);
     arr.push(randomNum);
 }
